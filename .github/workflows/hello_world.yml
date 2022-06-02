@@ -41,9 +41,20 @@ jobs:
 
   hello-world-windows:
     name: Hello World Windows
-    needs: [ hello-world-ubuntu ]
     runs-on: windows-latest
     
     steps:
     - name: Print Hello World Windows
       run: echo 'Hello world rodando no windows'
+      
+
+  hello-world-macos:
+    name: Hello World MacOS
+    needs: |
+      - hello-world-ubuntu
+      - hello-world-windows
+    runs-on: windows-latest
+    
+    steps:
+    - name: Print Hello World MacOS
+      run: echo 'Hello world rodando no MacOS'
