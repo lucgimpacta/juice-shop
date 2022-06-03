@@ -50,7 +50,7 @@ jobs:
 
   hello-world-macos:
     name: Hello World MacOS
-    needs: |
+    needs: 
       - hello-world-ubuntu
       - hello-world-windows
     runs-on: windows-latest
