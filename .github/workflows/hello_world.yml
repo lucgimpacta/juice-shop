@@ -53,7 +53,7 @@ jobs:
     needs: 
       - hello-world-ubuntu
       - hello-world-windows
-    runs-on: windows-latest
+    runs-on: macos-latest
     
     steps:
     - name: Print Hello World MacOS
